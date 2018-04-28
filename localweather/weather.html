@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="localweather.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,700,400' rel='stylesheet' type='text/css'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.3.2/css/weather-icons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <title>Local Weather</title>
+</head>
+<body>
+  
+  <div id="totalpage" class="container-fluid text-light bg-dark centered">
+    <div class="row">
+      <header class="col-xs-12 text-center container">
+        <h1>Weather App<img src="https://png.icons8.com/color/96/000000/partly-cloudy-rain.png"></h1>
+      </header>
+
+      <div class="container-fluid centered">
+        <div class="text-center status">
+          <p><span id="city"></span> <span id="country"></span></p>
+          <p><span id="temp"></span><span class="temp" id="tempunit" ></span></p>
+          <p id="desc"></p>
+        </div>
+
+        <div class="container-fluid centered all-icon">
+          <div class="icon sun-shower hide ">
+            <div class="cloud"></div>
+            <div class="sun">
+              <div class="rays"></div>
+            </div>
+            <div class="rain"></div>
+          </div>
+          <div class="icon thunder-storm hide thunderstom container-fluid centered">
+            <div class="cloud"></div>
+            <div class="lightning">
+              <div class="bolt"></div>
+              <div class="bolt"></div>
+            </div>
+          </div>
+          <div class="icon cloudy hide clouds container-fluid centered">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+          </div>
+          <div class="icon flurries hide snow container-fluid centered">
+            <div class="cloud"></div>
+            <div class="snow">
+              <div class="flake"></div>
+              <div class="flake"></div>
+            </div>
+          </div>
+          <div class="icon sunny hide clear container-fluid centered">
+            <div class="sun">
+              <div class="rays"></div>
+            </div>
+          </div>
+          <div class="icon rainy hide rain container-fluid centered">
+            <div class="cloud"></div>
+            <div class="rain"></div>
+          </div>
+        </div>
+
+        <p class="text-center container-fluid centered">Inspired By Raul G</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+  <script src="weatherscript.js"></script>
+</body>
+</html>
